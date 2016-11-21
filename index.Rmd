@@ -6,6 +6,10 @@ output:
     split_by: section
 site: bookdown::bookdown_site
 documentclass: book
+bibliography: ["crossref.bib", "test_reflibrary.bib"]
+# biblio-style: "apalike"
+csl: plos_mod.csl
+link-citations: true
 ---
 
 # Preface {-}
