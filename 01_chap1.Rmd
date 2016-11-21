@@ -1,4 +1,4 @@
-# Chapter 1 {#intro}
+# Chapter 1 {#chap1}
 
 This should be the first chapter...
 

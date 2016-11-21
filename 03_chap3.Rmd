@@ -4,4 +4,4 @@ Here is another chapter...
 
 ## Cross Referencing Chapters
 
-We can also cross reference chapters, see 
+We can also cross reference chapters, see Chapter \@ref(chap1) and Chapter \@ref(chap2).

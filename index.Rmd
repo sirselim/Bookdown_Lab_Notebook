@@ -8,13 +8,13 @@ site: bookdown::bookdown_site
 documentclass: book
 ---
 
-# Preface
+# Preface {-}
 
 Hi.
 
 Bye.
 
-## Test section
+## Test section {-}
 
 Here is some writing.
 
