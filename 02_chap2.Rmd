@@ -1,0 +1,11 @@
+# Chapter 2 {#chap2}
+
+Here is another chapter...
+
+## Creating figures 
+
+```{r foo, fig.cap='testing figure captions.'}
+plot(cars)
+```
+
+Can cross-ref your figures, see Figure \@ref(fig:foo).

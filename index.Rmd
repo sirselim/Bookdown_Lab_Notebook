@@ -1,0 +1,21 @@
+---
+title: "WILS 2016 Lab Notebook"
+author: "Miles Benton"
+output:
+  bookdown::gitbook: 
+    split_by: section
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Preface
+
+Hi.
+
+Bye.
+
+## Test section
+
+Here is some writing.
+
+
