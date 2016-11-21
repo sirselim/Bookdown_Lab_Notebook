@@ -8,4 +8,11 @@ We can also cross reference chapters, see Chapter \@ref(chap1) and Chapter \@ref
 
 I should also be able to link to a section like this, see [this section](#chap2), and also this way [Chapter 2].
 
-Shuld also be able to use citations in text [@Benton_2015]. 
+## Citing literature
+
+Should also be able to use citations in text [@Benton_2015]. 
+
+Does it keep poping in...? What about another citation, see [@Benton2013; @Benton2015a].
+
+
+**References**  

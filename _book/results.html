@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WILS 2016 Lab Notebook</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="WILS 2016 Lab Notebook">
+  <meta name="generator" content="bookdown 0.2.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="WILS 2016 Lab Notebook" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="WILS 2016 Lab Notebook" />
+  
+  
+  
+
+<meta name="author" content="Miles Benton">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="methods.html">
+<link rel="next" href="discussion.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="test-section.html"><a href="test-section.html"><i class="fa fa-check"></i>Test section</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Chapter 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>1.1</b> R Markdown</a></li>
+<li class="chapter" data-level="1.2" data-path="including-plots.html"><a href="including-plots.html"><i class="fa fa-check"></i><b>1.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chap2.html"><a href="chap2.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="creating-figures.html"><a href="creating-figures.html"><i class="fa fa-check"></i><b>2.1</b> Creating figures</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chap3.html"><a href="chap3.html"><i class="fa fa-check"></i><b>3</b> Chapter 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="cross-referencing-chapters.html"><a href="cross-referencing-chapters.html"><i class="fa fa-check"></i><b>3.1</b> Cross Referencing Chapters</a></li>
+<li class="chapter" data-level="3.2" data-path="citing-literature.html"><a href="citing-literature.html"><i class="fa fa-check"></i><b>3.2</b> Citing literature</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="writeup.html"><a href="writeup.html"><i class="fa fa-check"></i><b>4</b> An example experiment write up</a><ul>
+<li class="chapter" data-level="4.1" data-path="title.html"><a href="title.html"><i class="fa fa-check"></i><b>4.1</b> Title</a></li>
+<li class="chapter" data-level="4.2" data-path="aims.html"><a href="aims.html"><i class="fa fa-check"></i><b>4.2</b> Aims</a></li>
+<li class="chapter" data-level="4.3" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4.3</b> Introduction</a></li>
+<li class="chapter" data-level="4.4" data-path="materials.html"><a href="materials.html"><i class="fa fa-check"></i><b>4.4</b> Materials</a></li>
+<li class="chapter" data-level="4.5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4.5</b> Methods</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4.6</b> Results</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="results.html"><a href="results.html#display-code"><i class="fa fa-check"></i><b>4.6.1</b> Display code</a></li>
+<li class="chapter" data-level="4.6.2" data-path="results.html"><a href="results.html#evaluate-statisticsmodels-and-display-in-text"><i class="fa fa-check"></i><b>4.6.2</b> Evaluate statistics/models and display in text</a></li>
+<li class="chapter" data-level="4.6.3" data-path="results.html"><a href="results.html#can-even-include-plots"><i class="fa fa-check"></i><b>4.6.3</b> Can even include plots</a></li>
+<li class="chapter" data-level="4.6.4" data-path="results.html"><a href="results.html#tables-are-also-easy"><i class="fa fa-check"></i><b>4.6.4</b> Tables are also easy</a></li>
+<li class="chapter" data-level="4.6.5" data-path="results.html"><a href="results.html#output-to-many-popular-formats"><i class="fa fa-check"></i><b>4.6.5</b> Output to many popular formats</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>4.7</b> Discussion</a></li>
+<li class="chapter" data-level="4.8" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.8</b> Conclusion</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WILS 2016 Lab Notebook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="results" class="section level2">
+<h2><span class="header-section-number">4.6</span> Results</h2>
+<p>Here are some of the many features that are available when using R Notebooks.</p>
+<div id="display-code" class="section level3">
+<h3><span class="header-section-number">4.6.1</span> Display code</h3>
+<p>We are able to write and evaluate code using <em>chunks</em>, a concept implemented in RMarkdown - allowing us to both write text and code within the same document.</p>
+<p>To genetate a new chunk press <em>ctrl+alt+i</em>, within the chunk you can write and evaluate R code:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1+1</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+</div>
+<div id="evaluate-statisticsmodels-and-display-in-text" class="section level3">
+<h3><span class="header-section-number">4.6.2</span> Evaluate statistics/models and display in text</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lm</span>(cars)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = cars)
+## 
+## Coefficients:
+## (Intercept)         dist  
+##      8.2839       0.1656</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(<span class="kw">lm</span>(cars))</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = cars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -7.5293 -2.1550  0.3615  2.4377  6.4179 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  8.28391    0.87438   9.474 1.44e-12 ***
+## dist         0.16557    0.01749   9.464 1.49e-12 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.156 on 48 degrees of freedom
+## Multiple R-squared:  0.6511, Adjusted R-squared:  0.6438 
+## F-statistic: 89.57 on 1 and 48 DF,  p-value: 1.49e-12</code></pre>
+</div>
+<div id="can-even-include-plots" class="section level3">
+<h3><span class="header-section-number">4.6.3</span> Can even include plots</h3>
+<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="st">&quot;cadetblue&quot;</span>)</code></pre></div>
+<div class="figure"><span id="fig:mtcars"></span>
+<img src="_main_files/figure-html/mtcars-1.png" alt="Simple plotting using mtcars data." width="672" />
+<p class="caption">
+Figure 4.1: Simple plotting using mtcars data.
+</p>
+</div>
+<p>A really nifty feature is that plotted figures get asigned a figure number which is able to be referenced in text (see Figure <a href="results.html#fig:mtcars">4.1</a>).</p>
+<p>We can create the same plot as before, but this time fit the regression model that we previously generated. We’ll plot the best fit line using the <em>abline</em> function.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="st">&#39;cadetblue&#39;</span>)
+<span class="kw">abline</span>(<span class="kw">lm</span>(cars$dist ~<span class="st"> </span>cars$speed))</code></pre></div>
+<div class="figure"><span id="fig:regplot"></span>
+<img src="_main_files/figure-html/regplot-1.png" alt="Plot with regression model fitted." width="672" />
+<p class="caption">
+Figure 4.2: Plot with regression model fitted.
+</p>
+</div>
+<p>And again we can easily cross-ref the above plot, Figure <a href="results.html#fig:regplot">4.2</a>.</p>
+</div>
+<div id="tables-are-also-easy" class="section level3">
+<h3><span class="header-section-number">4.6.4</span> Tables are also easy</h3>
+<p>We can use the <em>kable</em> function from <em>knitr</em> (note that tables can also be captioned):</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(knitr)</code></pre></div>
+<pre><code>## Loading required package: knitr</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n &lt;-<span class="st"> </span><span class="dv">100</span>
+x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(n)
+y &lt;-<span class="st"> </span><span class="dv">2</span>*x +<span class="st"> </span><span class="kw">rnorm</span>(n)
+out &lt;-<span class="st"> </span><span class="kw">lm</span>(y ~<span class="st"> </span>x)
+<span class="kw">kable</span>(<span class="kw">summary</span>(out)$coef, <span class="dt">digits=</span><span class="dv">2</span>, <span class="dt">caption =</span> <span class="st">&#39;An example table produced by knitr kable().&#39;</span>)</code></pre></div>
+<table>
+<caption><span id="tab:kable">Table 4.1: </span>An example table produced by knitr kable().</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Estimate</th>
+<th align="right">Std. Error</th>
+<th align="right">t value</th>
+<th align="right">Pr(&gt;|t|)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td align="right">-0.17</td>
+<td align="right">0.1</td>
+<td align="right">-1.75</td>
+<td align="right">0.08</td>
+</tr>
+<tr class="even">
+<td>x</td>
+<td align="right">2.12</td>
+<td align="right">0.1</td>
+<td align="right">21.74</td>
+<td align="right">0.00</td>
+</tr>
+</tbody>
+</table>
+<p>There is a new package called <em>printr</em> which is a companion app to <em>knitr</em>, aiming to make tables look nicer.</p>
+<p>The package is currently not on CRAN, so you will need to install it as below:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install printr</span>
+<span class="kw">install.packages</span>(
+  <span class="st">&#39;printr&#39;</span>,
+  <span class="dt">type =</span> <span class="st">&#39;source&#39;</span>,
+  <span class="dt">repos =</span> <span class="kw">c</span>(<span class="st">&#39;http://yihui.name/xran&#39;</span>, <span class="st">&#39;http://cran.rstudio.com&#39;</span>)
+)
+<span class="co"># load the package</span>
+<span class="kw">library</span>(<span class="st">&#39;printr&#39;</span>)</code></pre></div>
+<p>The <em>printr</em> package aims to make the standard output from <code>R</code> a little nicer to look at (and easier to read), have a look at the following:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&#39;printr&#39;</span>)
+<span class="kw">head</span>(mtcars)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td>Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td>Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td>Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td>Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td>Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="output-to-many-popular-formats" class="section level3">
+<h3><span class="header-section-number">4.6.5</span> Output to many popular formats</h3>
+<p>RStudio uses the power of the <code>knitr</code> package and <code>pandoc</code> to allow the exporting of your document to several flexible and popular formats.</p>
+<div id="html" class="section level4">
+<h4><span class="header-section-number">4.6.5.1</span> HTML</h4>
+<p>By selecting <em>knit to HTML</em> an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
+</div>
+<div id="word-.docx" class="section level4">
+<h4><span class="header-section-number">4.6.5.2</span> Word (.docx)</h4>
+<p>By selecting <em>knit to Word</em> your notebook will be exported to <em>.docx</em> format, which will be able to be read by Microsoft Word and other office packages (i.e. Libre Office).</p>
+</div>
+<div id="pdf" class="section level4">
+<h4><span class="header-section-number">4.6.5.3</span> pdf</h4>
+<p>By selecting <em>knit to Word</em> your notebook will be exported to <em>.pdf</em>, the universal format.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="discussion.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

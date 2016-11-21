@@ -9,7 +9,7 @@ documentclass: book
 bibliography: ["crossref.bib", "test_reflibrary.bib"]
 # biblio-style: "apalike"
 csl: plos_mod.csl
-link-citations: true
+# link-citations: true
 ---
 
 # Preface {-}
