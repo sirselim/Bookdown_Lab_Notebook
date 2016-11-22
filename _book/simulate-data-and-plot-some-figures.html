@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="introduction.html">
-<link rel="next" href="methods.html">
+<link rel="prev" href="creating-figures.html">
+<link rel="next" href="chap3.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -159,21 +159,56 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="materials" class="section level2">
-<h2><span class="header-section-number">4.4</span> Materials</h2>
-<p>For this demonstration we need to download and install several pieces of software.</p>
-<p>First would be <code>R</code>, which can be downloaded here: <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a></p>
-<p>Next we’ll want to grab <code>RStudio</code>, here is the link: <a href="https://www.rstudio.com/products/rstudio/download/preview/" class="uri">https://www.rstudio.com/products/rstudio/download/preview/</a></p>
-<p>If you want to read more about RMarkdown: <a href="http://rmarkdown.rstudio.com/" class="uri">http://rmarkdown.rstudio.com/</a></p>
-<p>More information on R Notebooks: <a href="http://rmarkdown.rstudio.com/r_notebooks.html" class="uri">http://rmarkdown.rstudio.com/r_notebooks.html</a></p>
+<div id="simulate-data-and-plot-some-figures" class="section level2">
+<h2><span class="header-section-number">2.2</span> Simulate data and plot some figures</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">## Simulate some data
+
+## 3 Factor Variables
+FacVar1 =<span class="st"> </span><span class="kw">as.factor</span>(<span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;level1&quot;</span>, <span class="st">&quot;level2&quot;</span>), <span class="dv">25</span>))
+FacVar2 =<span class="st"> </span><span class="kw">as.factor</span>(<span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;levelA&quot;</span>, <span class="st">&quot;levelB&quot;</span>, <span class="st">&quot;levelC&quot;</span>), <span class="dv">17</span>)[-<span class="dv">51</span>])
+FacVar3 =<span class="st"> </span><span class="kw">as.factor</span>(<span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;levelI&quot;</span>, <span class="st">&quot;levelII&quot;</span>, <span class="st">&quot;levelIII&quot;</span>, <span class="st">&quot;levelIV&quot;</span>), <span class="dv">13</span>)[-<span class="kw">c</span>(<span class="dv">51</span>:<span class="dv">52</span>)])
+
+## 4 Numeric Vars
+<span class="kw">set.seed</span>(<span class="dv">123</span>)
+NumVar1 =<span class="st"> </span><span class="kw">round</span>(<span class="kw">rnorm</span>(<span class="dt">n =</span> <span class="dv">50</span>, <span class="dt">mean =</span> <span class="dv">1000</span>, <span class="dt">sd =</span> <span class="dv">50</span>), <span class="dt">digits =</span> <span class="dv">2</span>)  ## Normal distribution
+<span class="kw">set.seed</span>(<span class="dv">123</span>)
+NumVar2 =<span class="st"> </span><span class="kw">round</span>(<span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">50</span>, <span class="dt">min =</span> <span class="dv">500</span>, <span class="dt">max =</span> <span class="dv">1500</span>), <span class="dt">digits =</span> <span class="dv">2</span>)  ## Uniform distribution
+<span class="kw">set.seed</span>(<span class="dv">123</span>)
+NumVar3 =<span class="st"> </span><span class="kw">round</span>(<span class="kw">rexp</span>(<span class="dt">n =</span> <span class="dv">50</span>, <span class="dt">rate =</span> <span class="fl">0.001</span>))  ## Exponential distribution
+NumVar4 =<span class="st"> </span><span class="dv">2001</span>:<span class="dv">2050</span>
+
+simData =<span class="st"> </span><span class="kw">data.frame</span>(FacVar1, FacVar2, FacVar3, NumVar1, NumVar2, NumVar3, NumVar4)</code></pre></div>
+<div id="one-variable-numeric-variable" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> One Variable: Numeric Variable</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(simData$NumVar1, <span class="dt">type =</span> <span class="st">&quot;o&quot;</span>)  ## Index plot</code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:oneVar"></span>
+<img src="_main_files/figure-html/oneVar-1.png" alt="Plotting one numeric variable." width="672" />
+<p class="caption">
+Figure 2.3: Plotting one numeric variable.
+</p>
 </div>
+</div>
+<div id="two-variables-two-numeric-variables" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Two Variables: Two Numeric Variables</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(simData$NumVar1, <span class="dt">type =</span> <span class="st">&quot;o&quot;</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="kw">max</span>(simData$NumVar1, simData$NumVar2)))  ## index plot with one variable
+<span class="kw">lines</span>(simData$NumVar2, <span class="dt">type =</span> <span class="st">&quot;o&quot;</span>, <span class="dt">lty =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)  ## add another variable</code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:twoVar"></span>
+<img src="_main_files/figure-html/twoVar-1.png" alt="Plotting two numeric variables." width="672" />
+<p class="caption">
+Figure 2.4: Plotting two numeric variables.
+</p>
+</div>
+
+</div>
+</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="methods.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+<a href="creating-figures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chap3.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>

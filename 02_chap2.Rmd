@@ -26,3 +26,39 @@ legend(4.5, 7,
        lty = "solid")
 ```
 
+## Simulate data and plot some figures
+
+```{r simData}
+## Simulate some data
+
+## 3 Factor Variables
+FacVar1 = as.factor(rep(c("level1", "level2"), 25))
+FacVar2 = as.factor(rep(c("levelA", "levelB", "levelC"), 17)[-51])
+FacVar3 = as.factor(rep(c("levelI", "levelII", "levelIII", "levelIV"), 13)[-c(51:52)])
+
+## 4 Numeric Vars
+set.seed(123)
+NumVar1 = round(rnorm(n = 50, mean = 1000, sd = 50), digits = 2)  ## Normal distribution
+set.seed(123)
+NumVar2 = round(runif(n = 50, min = 500, max = 1500), digits = 2)  ## Uniform distribution
+set.seed(123)
+NumVar3 = round(rexp(n = 50, rate = 0.001))  ## Exponential distribution
+NumVar4 = 2001:2050
+
+simData = data.frame(FacVar1, FacVar2, FacVar3, NumVar1, NumVar2, NumVar3, NumVar4)
+```
+
+### One Variable: Numeric Variable
+
+```{r oneVar, fig.cap='Plotting one numeric variable.', fig.align='center'}
+plot(simData$NumVar1, type = "o")  ## Index plot
+```
+
+### Two Variables: Two Numeric Variables
+
+```{r twoVar, fig.cap='Plotting two numeric variables.', fig.align='center'}
+plot(simData$NumVar1, type = "o", ylim = c(0, max(simData$NumVar1, simData$NumVar2)))  ## index plot with one variable
+lines(simData$NumVar2, type = "o", lty = 2, col = "red")  ## add another variable
+```
+
+
