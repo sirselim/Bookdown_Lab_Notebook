@@ -1,3 +1,5 @@
+# Part II: Experimental Structure {-}
+
 # An example experiment write up {#writeup}
 
 This chapter will detail the structure that an experimental write up should take for this course.
@@ -30,7 +32,7 @@ We will be exploring a range of different methods and functions from both R and 
 ## Results
 Here are some of the many features that are available when using R Notebooks. 
 
-### Display code
+### Display code {#codeDisplay}
 We are able to write and evaluate code using *chunks*, a concept implemented in RMarkdown - allowing us to both write text and code within the same document.
 
 To genetate a new chunk press *ctrl+alt+i*, within the chunk you can write and evaluate R code:

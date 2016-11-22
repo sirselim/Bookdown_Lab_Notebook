@@ -4,12 +4,13 @@ author: "Miles Benton"
 output:
   bookdown::gitbook: 
     split_by: section
+    split_bib: yes
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: ["crossref.bib", "test_reflibrary.bib"]
 # biblio-style: "apalike"
 csl: plos_mod.csl
-# link-citations: true
+link-citations: true
 ---
 
 # Preface {-}

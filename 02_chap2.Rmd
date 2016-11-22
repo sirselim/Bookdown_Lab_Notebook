@@ -8,4 +8,12 @@ Here is another chapter...
 plot(cars)
 ```
 
-Can cross-ref your figures, see Figure \@ref(fig:foo).
+Can cross-ref your figures, see Figure \@ref(fig:foo).^[You can also use footnotes in your book.]
+
+Block quotes are a thing:
+
+> "I thoroughly disapprove of duels. If a man should challenge me,
+  I would take him kindly and forgivingly by the hand and lead him
+  to a quiet place and kill him."
+>
+> --- Mark Twain
