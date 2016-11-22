@@ -4,7 +4,7 @@ Here is another chapter...
 
 ## Creating figures 
 
-```{r foo, fig.cap='testing figure captions.'}
+```{r foo, fig.cap='testing figure captions.', fig.align = 'center'}
 plot(cars)
 ```
 
@@ -17,3 +17,12 @@ Block quotes are a thing:
   to a quiet place and kill him."
 >
 > --- Mark Twain
+
+```{r irisPlot, fig.cap='Scatterplot with legend using iris data.', fig.align = 'center'}
+plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, pch = 16, cex = 2)
+legend(4.5, 7, 
+       legend = c("setosa","versicolor","virginica"),
+       col = c(1:3),
+       lty = "solid")
+```
+

@@ -54,7 +54,7 @@ summary(lm(cars))
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
-```{r mtcars, fig.cap='Simple plotting using mtcars data.', tidy=TRUE}
+```{r mtcars, fig.cap='Simple plotting using mtcars data.', tidy=TRUE, fig.align = 'center'}
 plot(cars, pch = 16, col = 'cadetblue')
 ```
 
@@ -62,7 +62,7 @@ A really nifty feature is that plotted figures get asigned a figure number which
 
 We can create the same plot as before, but this time fit the regression model that we previously generated. We'll plot the best fit line using the *abline* function.
 
-```{r regplot, fig.cap='Plot with regression model fitted.'}
+```{r regplot, fig.cap='Plot with regression model fitted.', fig.align = 'center'}
 plot(cars, pch = 16, col = 'cadetblue')
 abline(lm(cars$dist ~ cars$speed))
 ```

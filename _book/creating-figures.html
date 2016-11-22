@@ -158,7 +158,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="creating-figures" class="section level2">
 <h2><span class="header-section-number">2.1</span> Creating figures</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars)</code></pre></div>
-<div class="figure"><span id="fig:foo"></span>
+<div class="figure" style="text-align: center"><span id="fig:foo"></span>
 <img src="_main_files/figure-html/foo-1.png" alt="testing figure captions." width="672" />
 <p class="caption">
 Figure 2.1: testing figure captions.
@@ -170,6 +170,17 @@ Figure 2.1: testing figure captions.
 <p>“I thoroughly disapprove of duels. If a man should challenge me, I would take him kindly and forgivingly by the hand and lead him to a quiet place and kill him.”</p>
 <p>— Mark Twain</p>
 </blockquote>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(iris$Sepal.Length, iris$Petal.Length, <span class="dt">col =</span> iris$Species, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">cex =</span> <span class="dv">2</span>)
+<span class="kw">legend</span>(<span class="fl">4.5</span>, <span class="dv">7</span>, 
+       <span class="dt">legend =</span> <span class="kw">c</span>(<span class="st">&quot;setosa&quot;</span>,<span class="st">&quot;versicolor&quot;</span>,<span class="st">&quot;virginica&quot;</span>),
+       <span class="dt">col =</span> <span class="kw">c</span>(<span class="dv">1</span>:<span class="dv">3</span>),
+       <span class="dt">lty =</span> <span class="st">&quot;solid&quot;</span>)</code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:irisPlot"></span>
+<img src="_main_files/figure-html/irisPlot-1.png" alt="Scatterplot with legend using iris data." width="672" />
+<p class="caption">
+Figure 2.2: Scatterplot with legend using iris data.
+</p>
+</div>
 
 </div>
 <!-- </div> -->

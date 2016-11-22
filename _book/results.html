@@ -199,7 +199,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h3><span class="header-section-number">4.6.3</span> Can even include plots</h3>
 <p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="st">&quot;cadetblue&quot;</span>)</code></pre></div>
-<div class="figure"><span id="fig:mtcars"></span>
+<div class="figure" style="text-align: center"><span id="fig:mtcars"></span>
 <img src="_main_files/figure-html/mtcars-1.png" alt="Simple plotting using mtcars data." width="672" />
 <p class="caption">
 Figure 4.1: Simple plotting using mtcars data.
@@ -209,7 +209,7 @@ Figure 4.1: Simple plotting using mtcars data.
 <p>We can create the same plot as before, but this time fit the regression model that we previously generated. We’ll plot the best fit line using the <em>abline</em> function.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(cars, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="st">&#39;cadetblue&#39;</span>)
 <span class="kw">abline</span>(<span class="kw">lm</span>(cars$dist ~<span class="st"> </span>cars$speed))</code></pre></div>
-<div class="figure"><span id="fig:regplot"></span>
+<div class="figure" style="text-align: center"><span id="fig:regplot"></span>
 <img src="_main_files/figure-html/regplot-1.png" alt="Plot with regression model fitted." width="672" />
 <p class="caption">
 Figure 4.2: Plot with regression model fitted.
@@ -241,17 +241,17 @@ out &lt;-<span class="st"> </span><span class="kw">lm</span>(y ~<span class="st"
 <tbody>
 <tr class="odd">
 <td>(Intercept)</td>
-<td align="right">0.05</td>
+<td align="right">0.17</td>
 <td align="right">0.1</td>
-<td align="right">0.51</td>
-<td align="right">0.61</td>
+<td align="right">1.67</td>
+<td align="right">0.1</td>
 </tr>
 <tr class="even">
 <td>x</td>
-<td align="right">2.06</td>
+<td align="right">1.90</td>
 <td align="right">0.1</td>
-<td align="right">21.70</td>
-<td align="right">0.00</td>
+<td align="right">19.59</td>
+<td align="right">0.0</td>
 </tr>
 </tbody>
 </table>
