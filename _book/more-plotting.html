@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WILS 2016 Lab Notebook</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="WILS 2016 Lab Notebook">
+  <meta name="generator" content="bookdown 0.2.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="WILS 2016 Lab Notebook" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="WILS 2016 Lab Notebook" />
+  
+  
+  
+
+<meta name="author" content="Miles Benton">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="simulate-data-and-plot-some-figures.html">
+<link rel="next" href="chap3.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="test-section.html"><a href="test-section.html"><i class="fa fa-check"></i>Test section</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-i-general-overview.html"><a href="part-i-general-overview.html"><i class="fa fa-check"></i>Part I: General Overview</a></li>
+<li class="chapter" data-level="1" data-path="chap1.html"><a href="chap1.html"><i class="fa fa-check"></i><b>1</b> Chapter 1</a><ul>
+<li class="chapter" data-level="1.1" data-path="r-markdown.html"><a href="r-markdown.html"><i class="fa fa-check"></i><b>1.1</b> R Markdown</a></li>
+<li class="chapter" data-level="1.2" data-path="including-plots.html"><a href="including-plots.html"><i class="fa fa-check"></i><b>1.2</b> Including Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="chap2.html"><a href="chap2.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="creating-figures.html"><a href="creating-figures.html"><i class="fa fa-check"></i><b>2.1</b> Creating figures</a></li>
+<li class="chapter" data-level="2.2" data-path="simulate-data-and-plot-some-figures.html"><a href="simulate-data-and-plot-some-figures.html"><i class="fa fa-check"></i><b>2.2</b> Simulate data and plot some figures</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="simulate-data-and-plot-some-figures.html"><a href="simulate-data-and-plot-some-figures.html#one-variable-numeric-variable"><i class="fa fa-check"></i><b>2.2.1</b> One Variable: Numeric Variable</a></li>
+<li class="chapter" data-level="2.2.2" data-path="simulate-data-and-plot-some-figures.html"><a href="simulate-data-and-plot-some-figures.html#two-variables-two-numeric-variables"><i class="fa fa-check"></i><b>2.2.2</b> Two Variables: Two Numeric Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="more-plotting.html"><a href="more-plotting.html"><i class="fa fa-check"></i><b>2.3</b> More plotting</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="more-plotting.html"><a href="more-plotting.html#correlations"><i class="fa fa-check"></i><b>2.3.1</b> Correlations</a></li>
+<li class="chapter" data-level="2.3.2" data-path="more-plotting.html"><a href="more-plotting.html#including-a-density-estimator"><i class="fa fa-check"></i><b>2.3.2</b> Including a Density Estimator</a></li>
+<li class="chapter" data-level="2.3.3" data-path="more-plotting.html"><a href="more-plotting.html#network-graph"><i class="fa fa-check"></i><b>2.3.3</b> Network graph</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="chap3.html"><a href="chap3.html"><i class="fa fa-check"></i><b>3</b> Chapter 3</a><ul>
+<li class="chapter" data-level="3.1" data-path="cross-referencing-chapters.html"><a href="cross-referencing-chapters.html"><i class="fa fa-check"></i><b>3.1</b> Cross Referencing Chapters</a></li>
+<li class="chapter" data-level="3.2" data-path="cross-reference-sections.html"><a href="cross-reference-sections.html"><i class="fa fa-check"></i><b>3.2</b> Cross Reference Sections</a></li>
+<li class="chapter" data-level="3.3" data-path="citing-literature.html"><a href="citing-literature.html"><i class="fa fa-check"></i><b>3.3</b> Citing literature</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-ii-experimental-structure.html"><a href="part-ii-experimental-structure.html"><i class="fa fa-check"></i>Part II: Experimental Structure</a></li>
+<li class="chapter" data-level="4" data-path="writeup.html"><a href="writeup.html"><i class="fa fa-check"></i><b>4</b> An example experiment write up</a><ul>
+<li class="chapter" data-level="4.1" data-path="title.html"><a href="title.html"><i class="fa fa-check"></i><b>4.1</b> Title</a></li>
+<li class="chapter" data-level="4.2" data-path="aims.html"><a href="aims.html"><i class="fa fa-check"></i><b>4.2</b> Aims</a></li>
+<li class="chapter" data-level="4.3" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4.3</b> Introduction</a></li>
+<li class="chapter" data-level="4.4" data-path="materials.html"><a href="materials.html"><i class="fa fa-check"></i><b>4.4</b> Materials</a></li>
+<li class="chapter" data-level="4.5" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4.5</b> Methods</a></li>
+<li class="chapter" data-level="4.6" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>4.6</b> Results</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="results.html"><a href="results.html#codeDisplay"><i class="fa fa-check"></i><b>4.6.1</b> Display code</a></li>
+<li class="chapter" data-level="4.6.2" data-path="results.html"><a href="results.html#evaluate-statisticsmodels-and-display-in-text"><i class="fa fa-check"></i><b>4.6.2</b> Evaluate statistics/models and display in text</a></li>
+<li class="chapter" data-level="4.6.3" data-path="results.html"><a href="results.html#can-even-include-plots"><i class="fa fa-check"></i><b>4.6.3</b> Can even include plots</a></li>
+<li class="chapter" data-level="4.6.4" data-path="results.html"><a href="results.html#tables-are-also-easy"><i class="fa fa-check"></i><b>4.6.4</b> Tables are also easy</a></li>
+<li class="chapter" data-level="4.6.5" data-path="results.html"><a href="results.html#output-to-many-popular-formats"><i class="fa fa-check"></i><b>4.6.5</b> Output to many popular formats</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>4.7</b> Discussion</a></li>
+<li class="chapter" data-level="4.8" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>4.8</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="part-iiimore-stuff.html"><a href="part-iiimore-stuff.html"><i class="fa fa-check"></i>Part III:More Stuff</a></li>
+<li class="chapter" data-level="5" data-path="another-chapter.html"><a href="another-chapter.html"><i class="fa fa-check"></i><b>5</b> Another Chapter</a><ul>
+<li class="chapter" data-level="5.1" data-path="another-section.html"><a href="another-section.html"><i class="fa fa-check"></i><b>5.1</b> Another section</a></li>
+<li class="chapter" data-level="5.2" data-path="and-another-section.html"><a href="and-another-section.html"><i class="fa fa-check"></i><b>5.2</b> and another section</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">WILS 2016 Lab Notebook</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="more-plotting" class="section level2">
+<h2><span class="header-section-number">2.3</span> More plotting</h2>
+<p>The below examples come from here: <a href="http://shinyapps.org/apps/RGraphCompendium/index.php" class="uri">http://shinyapps.org/apps/RGraphCompendium/index.php</a></p>
+<div id="correlations" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Correlations</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Presidential data up to and including 2008; data from Stulp et al. 2013</span>
+<span class="co"># rm(list=ls())</span>
+<span class="co"># height of president divided by height of most successful opponent: </span>
+height.ratio &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.924324324</span>, <span class="fl">1.081871345</span>, <span class="dv">1</span>, <span class="fl">0.971098266</span>, <span class="fl">1.029761905</span>,
+   <span class="fl">0.935135135</span>, <span class="fl">0.994252874</span>, <span class="fl">0.908163265</span>, <span class="fl">1.045714286</span>, <span class="fl">1.18404908</span>,
+   <span class="fl">1.115606936</span>, <span class="fl">0.971910112</span>, <span class="fl">0.97752809</span>, <span class="fl">0.978609626</span>, <span class="dv">1</span>,
+   <span class="fl">0.933333333</span>, <span class="fl">1.071428571</span>, <span class="fl">0.944444444</span>, <span class="fl">0.944444444</span>, <span class="fl">1.017142857</span>,
+   <span class="fl">1.011111111</span>, <span class="fl">1.011235955</span>, <span class="fl">1.011235955</span>, <span class="fl">1.089285714</span>, <span class="fl">0.988888889</span>,
+   <span class="fl">1.011111111</span>, <span class="fl">1.032967033</span>, <span class="fl">1.044444444</span>, <span class="dv">1</span>, <span class="fl">1.086705202</span>,
+   <span class="fl">1.011560694</span>, <span class="fl">1.005617978</span>, <span class="fl">1.005617978</span>, <span class="fl">1.005494505</span>, <span class="fl">1.072222222</span>,
+   <span class="fl">1.011111111</span>, <span class="fl">0.983783784</span>, <span class="fl">0.967213115</span>, <span class="fl">1.04519774</span>, <span class="fl">1.027777778</span>,
+   <span class="fl">1.086705202</span>, <span class="dv">1</span>, <span class="fl">1.005347594</span>, <span class="fl">0.983783784</span>, <span class="fl">0.943005181</span>, <span class="fl">1.057142857</span>)
+
+<span class="co"># proportion popular vote for president vs most successful opponent</span>
+<span class="co"># NB can be lower than .5 because popolar vote does not decide election</span>
+pop.vote &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.427780852</span>, <span class="fl">0.56148981</span>, <span class="fl">0.597141922</span>, <span class="fl">0.581254292</span>, <span class="fl">0.530344067</span>,
+  <span class="fl">0.507425996</span>, <span class="fl">0.526679292</span>, <span class="fl">0.536690951</span>, <span class="fl">0.577825976</span>, <span class="fl">0.573225387</span>,
+  <span class="fl">0.550410082</span>, <span class="fl">0.559380032</span>, <span class="fl">0.484823958</span>, <span class="fl">0.500466176</span>, <span class="fl">0.502934212</span>,
+  <span class="fl">0.49569636</span>, <span class="fl">0.516904414</span>, <span class="fl">0.522050547</span>, <span class="fl">0.531494442</span>, <span class="fl">0.60014892</span>, 
+  <span class="fl">0.545079801</span>, <span class="fl">0.604274986</span>, <span class="fl">0.51635906</span>, <span class="fl">0.63850958</span>, <span class="fl">0.652184407</span>, 
+  <span class="fl">0.587920412</span>, <span class="fl">0.5914898</span>, <span class="fl">0.624614752</span>, <span class="fl">0.550040193</span>, <span class="fl">0.537771958</span>, 
+  <span class="fl">0.523673642</span>, <span class="fl">0.554517134</span>, <span class="fl">0.577511576</span>, <span class="fl">0.500856251</span>, <span class="fl">0.613444534</span>, 
+  <span class="fl">0.504063153</span>, <span class="fl">0.617883695</span>, <span class="fl">0.51049949</span>, <span class="fl">0.553073235</span>, <span class="fl">0.59166415</span>, 
+  <span class="fl">0.538982024</span>, <span class="fl">0.53455133</span>, <span class="fl">0.547304058</span>, <span class="fl">0.497350649</span>, <span class="fl">0.512424242</span>, 
+  <span class="fl">0.536914796</span>)
+           
+<span class="co"># cor.test(height.ratio,pop.vote)</span>
+<span class="kw">library</span>(plotrix) <span class="co"># package plotrix is needed for function &quot;ablineclip&quot;&quot;</span>
+<span class="co"># if the following line and the line containing &quot;dev.off()&quot; are executed, the plot will be saved as a png file in the current working directory</span>
+<span class="co"># png(&quot;Presidental.png&quot;, width = 18, height = 18, units = &quot;cm&quot;, res = 800, pointsize = 10) </span>
+op &lt;-<span class="st"> </span><span class="kw">par</span>(<span class="dt">cex.main =</span> <span class="fl">1.5</span>, <span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">5</span>) +<span class="st"> </span><span class="fl">0.1</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">3.5</span>, <span class="dv">1</span>, <span class="dv">0</span>), <span class="dt">cex.lab =</span> <span class="fl">1.5</span> , <span class="dt">font.lab =</span> <span class="dv">2</span>, <span class="dt">cex.axis =</span> <span class="fl">1.3</span>, <span class="dt">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)
+<span class="kw">plot</span>(height.ratio, pop.vote, <span class="dt">col =</span> <span class="st">&quot;black&quot;</span>, <span class="dt">pch =</span> <span class="dv">21</span>, <span class="dt">bg =</span> <span class="st">&quot;grey&quot;</span>, <span class="dt">cex =</span> <span class="dv">2</span>,
+     <span class="dt">xlim =</span> <span class="kw">c</span>(.<span class="dv">90</span>,<span class="fl">1.20</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(.<span class="dv">40</span>,.<span class="dv">70</span>), <span class="dt">ylab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">axes =</span> <span class="ot">FALSE</span>)
+<span class="kw">axis</span>(<span class="dv">1</span>)
+<span class="kw">axis</span>(<span class="dv">2</span>) 
+reg1 &lt;-<span class="st"> </span><span class="kw">lm</span>(pop.vote ~<span class="st"> </span>height.ratio)
+<span class="kw">ablineclip</span>(reg1, <span class="dt">lwd =</span> <span class="dv">2</span>,<span class="dt">x1 =</span> .<span class="dv">9</span>, <span class="dt">x2 =</span> <span class="fl">1.2</span>) 
+<span class="kw">par</span>(<span class="dt">las =</span> <span class="dv">0</span>)
+<span class="kw">mtext</span>(<span class="st">&quot;Presidential Height Ratio&quot;</span>, <span class="dt">side =</span> <span class="dv">1</span>, <span class="dt">line =</span> <span class="fl">2.5</span>, <span class="dt">cex =</span> <span class="fl">1.5</span>)
+<span class="kw">mtext</span>(<span class="st">&quot;Relative Support for President&quot;</span>, <span class="dt">side =</span> <span class="dv">2</span>, <span class="dt">line =</span> <span class="fl">3.7</span>, <span class="dt">cex =</span> <span class="fl">1.5</span>)
+<span class="kw">text</span>(<span class="fl">1.15</span>, .<span class="dv">65</span>, <span class="st">&quot;r = .39&quot;</span>, <span class="dt">cex =</span> <span class="fl">1.5</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># dev.off()</span>
+<span class="co"># For comparison, consider the default plot:</span>
+<span class="kw">par</span>(op) <span class="co"># reset to default &quot;par&quot; settings</span>
+<span class="kw">plot</span>(height.ratio, pop.vote) <span class="co">#yuk!</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+</div>
+<div id="including-a-density-estimator" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Including a Density Estimator</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># rm(list = ls())</span>
+<span class="co"># Data: Proportion of choices from the good decks as reported in 39 studies</span>
+good.choices &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">43</span>, .<span class="dv">47</span>, .<span class="dv">47</span>, .<span class="dv">48</span>, .<span class="dv">50</span>, .<span class="dv">52</span>, .<span class="dv">53</span>, .<span class="dv">53</span>, .<span class="dv">54</span>, .<span class="dv">54</span>, .<span class="dv">54</span>, .<span class="dv">54</span>, .<span class="dv">55</span>, .<span class="dv">55</span>, .<span class="dv">55</span>, .<span class="dv">56</span>, .<span class="dv">56</span>, .<span class="dv">57</span>, .<span class="dv">57</span>, .<span class="dv">57</span>, .<span class="dv">57</span>, .<span class="dv">58</span>, .<span class="dv">58</span>, .<span class="dv">58</span>, .<span class="dv">59</span>, .<span class="dv">59</span>, .<span class="dv">60</span>, .<span class="dv">62</span>, .<span class="dv">63</span>, .<span class="dv">63</span>, .<span class="dv">64</span>, .<span class="dv">64</span>, .<span class="dv">66</span>, .<span class="dv">66</span>, .<span class="dv">67</span>, .<span class="dv">67</span>, .<span class="dv">68</span>, .<span class="dv">70</span>, .<span class="dv">70</span>)
+yhigh &lt;-<span class="st"> </span><span class="dv">8</span>
+<span class="kw">par</span>(<span class="dt">cex.main =</span> <span class="fl">1.5</span>, <span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">5</span>) +<span class="st"> </span><span class="fl">0.1</span>, <span class="dt">mgp =</span> <span class="kw">c</span>(<span class="fl">3.5</span>, <span class="dv">1</span>, <span class="dv">0</span>), <span class="dt">cex.lab =</span> <span class="fl">1.5</span> , <span class="dt">font.lab =</span> <span class="dv">2</span>, <span class="dt">cex.axis =</span> <span class="fl">1.3</span>, <span class="dt">bty =</span> <span class="st">&quot;n&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)
+h &lt;-<span class="st"> </span><span class="kw">hist</span>(good.choices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, <span class="dt">main =</span> <span class="st">&quot;&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot; &quot;</span>, <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, yhigh), <span class="dt">xlim =</span> <span class="kw">c</span>(.<span class="dv">30</span>, .<span class="dv">80</span>), <span class="dt">axes =</span> <span class="ot">FALSE</span>, <span class="dt">col =</span> <span class="st">&quot;grey&quot;</span>)
+<span class="kw">axis</span>(<span class="dv">1</span>, <span class="kw">seq</span>(.<span class="dv">30</span>, .<span class="dv">80</span>, <span class="dt">by =</span> .<span class="dv">1</span>))
+<span class="kw">axis</span>(<span class="dv">2</span>, <span class="dt">labels =</span> <span class="ot">FALSE</span>, <span class="dt">lwd.ticks =</span> <span class="dv">0</span>)
+<span class="kw">rug</span>(<span class="kw">jitter</span>(good.choices))
+<span class="kw">mtext</span>(<span class="st">&quot;Prop. Choices from Good Decks&quot;</span>, <span class="dt">side =</span> <span class="dv">1</span>, <span class="dt">line =</span> <span class="fl">2.5</span>, <span class="dt">cex =</span> <span class="fl">1.5</span>, <span class="dt">font =</span> <span class="dv">2</span>)
+<span class="kw">mtext</span>(<span class="st">&quot;Density of Studies&quot;</span>, <span class="dt">side =</span> <span class="dv">2</span>, <span class="dt">line =</span> <span class="dv">1</span>, <span class="dt">cex =</span> <span class="fl">1.5</span>, <span class="dt">font =</span> <span class="dv">2</span>, <span class="dt">las =</span> <span class="dv">0</span>)
+<span class="kw">lines</span>(<span class="kw">density</span>(good.choices), <span class="dt">lwd =</span> <span class="dv">2</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="network-graph" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> Network graph</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;psych&quot;</span>)
+<span class="kw">library</span>(<span class="st">&quot;qgraph&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Load BFI data:</span>
+<span class="kw">data</span>(bfi)
+bfi &lt;-<span class="st"> </span>bfi[, <span class="dv">1</span>:<span class="dv">25</span>]
+
+<span class="co"># Groups and names object (not needed really, but make the plots easier to</span>
+<span class="co"># interpret):</span>
+Names &lt;-<span class="st"> </span><span class="kw">scan</span>(<span class="st">&quot;http://sachaepskamp.com/files/BFIitems.txt&quot;</span>, <span class="dt">what =</span> <span class="st">&quot;character&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)
+
+<span class="co"># Create groups object:</span>
+Groups &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;E&quot;</span>, <span class="st">&quot;N&quot;</span>, <span class="st">&quot;O&quot;</span>), <span class="dt">each =</span> <span class="dv">5</span>)
+
+<span class="co"># Compute correlations:</span>
+cor_bfi &lt;-<span class="st"> </span><span class="kw">cor_auto</span>(bfi)
+
+<span class="co"># Plot correlation network:</span>
+graph_cor &lt;-<span class="st"> </span><span class="kw">qgraph</span>(cor_bfi, <span class="dt">layout =</span> <span class="st">&quot;spring&quot;</span>, <span class="dt">nodeNames =</span> Names, <span class="dt">groups =</span> Groups, <span class="dt">legend.cex =</span> <span class="fl">0.6</span>, 
+    <span class="dt">DoNotPlot =</span> <span class="ot">TRUE</span>)
+
+<span class="co"># Plot partial correlation network:</span>
+graph_pcor &lt;-<span class="st"> </span><span class="kw">qgraph</span>(cor_bfi, <span class="dt">graph =</span> <span class="st">&quot;concentration&quot;</span>, <span class="dt">layout =</span> <span class="st">&quot;spring&quot;</span>, <span class="dt">nodeNames =</span> Names, 
+    <span class="dt">groups =</span> Groups, <span class="dt">legend.cex =</span> <span class="fl">0.6</span>, <span class="dt">DoNotPlot =</span> <span class="ot">TRUE</span>)
+
+<span class="co"># Plot glasso network:</span>
+graph_glas &lt;-<span class="st"> </span><span class="kw">qgraph</span>(cor_bfi, <span class="dt">graph =</span> <span class="st">&quot;glasso&quot;</span>, <span class="dt">sampleSize =</span> <span class="kw">nrow</span>(bfi), <span class="dt">layout =</span> <span class="st">&quot;spring&quot;</span>, 
+    <span class="dt">nodeNames =</span> Names, <span class="dt">legend.cex =</span> <span class="fl">0.6</span>, <span class="dt">groups =</span> Groups, <span class="dt">legend.cex =</span> <span class="fl">0.7</span>, <span class="dt">GLratio =</span> <span class="dv">2</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/network-1.png" width="1440" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="simulate-data-and-plot-some-figures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chap3.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
